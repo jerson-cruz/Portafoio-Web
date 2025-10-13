@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Jerson Cruz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Jerson Hernan Cruz Garcia</h1>
+    <p>Tecnólogo en Análisis y Desarrollo de Software</p>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#biografia">Biografía</a></li>
+        <li><a href="#curriculum">Currículum</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="selector-tema">
+        <button class="btn-tema" data-tema="azul"> <img src="imagenes/azul.PNG" alt="azul" style="width: 50px; height: 50px;  object-fit: cover;"></button>
+        <button class="btn-tema" data-tema="cafe"> <img src="imagenes/cafe.PNG" alt="cafe" style="width: 50px; height: 50px;  object-fit: cover;"></button>
+        <button class="btn-tema" data-tema="gris"> <img src="imagenes/grises.PNG" alt="gris" style="width: 50px; height: 50px;  object-fit: cover;"></button>
+        <button class="btn-tema" data-tema="claro"> <img src="imagenes/claro.PNG" alt="claro" style="width: 50px; height: 50px;  object-fit: cover;"></button>
+      </div>
+
+    </nav>
+  </header>
+ 
+
+  <!-- Secciones -->
+  <section id="inicio">
+    <div class="tarjeta">
+      <h2>Jerson Hernan Cruz García </h2>
+       <img src="imagenes/jerson.png" alt="Jerson Hernan Cruz Garcia"
+       style="width: 350px; height: 350px; border-radius: 50%; object-fit: cover;"> 
+    
+             
+    </div>
+  </section>
+
+  <section id="biografia">
+    <div class="tarjeta">
+      <h2>Biografía</h2>
+      <p>Soy un profesional en constante formación con un fuerte interés en la tecnología, el desarrollo web y la gestión de proyectos. Mi trayectoria académica y práctica me ha permitido adquirir habilidades tanto en la programación FrontEnd y BackEnd, como en la analítica de datos con herramientas de inteligencia de negocios (BI), lo que me convierte en un perfil versátil y adaptable a diferentes entornos. <br><br><br>
+
+       <button id="btnVerMas">Ver contenido</button>
+    </div>
+  </section>
+  
+
+
+  
+    <div id="miVentana" class="modal">
+      <div class="contenido-modal">
+        <span class="cerrar">&times;</span>
+        
+        <p>
+          He trabajado en proyectos como el sistema de gestión para barberías, donde diseñé y desarrollé funcionalidades enfocadas en la administración de citas, clientes y servicios, aplicando metodologías ágiles y buenas prácticas de desarrollo. Asimismo, participé en la creación de un prototipo web para Eulen Colombia, orientado a la gestión empresarial y la presentación eficiente de servicios corporativos. <br><br>
+          Además, cuento con experiencia en la construcción de dashboards en Power BI, lo que me ha permitido integrar datos de diferentes fuentes, diseñar reportes visuales y generar información clave para la toma de decisiones. <br><br>
+          <b>Mi propuesta de valor se basa en:</b><br><br>
+          Capacidad de aprender de manera continua y autodidacta, manteniéndome actualizado con las tendencias tecnológicas.<br><br>
+          Enfoque en la calidad del código y la usabilidad de las soluciones que desarrollo.<br><br>
+          Habilidades de análisis y gestión, que me permiten comprender los objetivos de las organizaciones y transformarlos en soluciones tecnológicas efectivas.<br><br>
+          Compromiso con la innovación y la mejora constante.<br><br>
+          <b>A corto plazo</b>, busco integrarme a un equipo donde pueda aplicar y perfeccionar mis conocimientos, contribuyendo al desarrollo de proyectos de alto impacto.<br><br>
+          <b>A largo plazo</b>, aspiro a consolidarme como desarrollador web Full Stack, complementando mis competencias técnicas con experiencia en la gestión de proyectos tecnológicos.
+        </p>
+      </div>
+    </div>
+
+    <section id="proyectos">
+      <div class="tarjeta">
+  <h2>Proyectos destacados</h2>
+
+  <div class="proyecto">
+    <h3>Sistema de Barbería</h3>
+    <p>
+      Pagina: 
+      <a href="" target="_blank">
+        Pagina Web ↗
+      </a>
+    </p>
+
+        <p>
+      Video:
+      <a href="videos/video barberia.mp4" target="_blank">
+        Video Barberia ↗
+      </a>
+    </p>
+    <p>Aplicación web para la gestión de citas, clientes y servicios en barberías.</p>
+  </div>
+
+  <div class="proyecto">
+    <h3>Prototipo Web Eulen Colombia</h3>
+    <p>
+      Pagina: 
+      <a href="" target="_blank">
+        Prototipo Eulen ↗
+      </a>
+    </p>
+    
+        <p>
+      Video: 
+      <a href="videos/prototipo eulen.mkv" target="_blank">
+        Prototipo Eulen ↗
+      </a>
+    </p>
+    <p>Prototipo web diseñado para la empresa Eulen Colombia, enfocado en la presentación de servicios y gestión empresarial.</p>
+  </div>
+
+  <div class="proyecto">
+    <h3> Power BI - Dashboard de Análisis</h3>
+    <p>Incluiremos imágenes de los reportes finales.</p>
+    <p>Breve explicación de las tablas y relaciones utilizadas.</p>
+  </div>
+  </div>
+</section>
+
+
+  <section id="curriculum">
+ <div class="tarjeta">
+    <h2>Currículum Vitae — Test</h2>
+    <p>Formación principal:</p>
+
+    <div class="swiper myswiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <a href="documentos/diploma.pdf" title="Bachiller" target="_blank">
+          <img src="imagenes/diploma-bachiller.PNG" alt="Bachiller">
+          </a>
+        </div>
+          
+        
+        <div class="swiper-slide">
+          <a href="documentos/programacion web basica HTML CSS JS.pdf" title=" html-css-js" target="_blank">
+          <img src="imagenes/certificado-html-css-js.PNG" alt="cert1">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="documentos/Curso en Creación y Diseño de Páginas Web.pdf" title="Diseño web" target="_blank">
+          <img src="imagenes/certificado-paginas-web.PNG" alt="cert2">
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="tarjeta">
+      <h2>Habilidades</h2>
+        <img src="imagenes/html-5.png" title="HTML"
+        style="width: 50px; height: 50px;  object-fit: cover;">
+       
+        <img src="imagenes/css.png"
+        style="width: 50px; height: 50px;  object-fit: cover;">
+        
+        <img src="imagenes/secuencia-de-comandos-de-java.png"
+        style="width: 50px; height: 50px;  object-fit: cover;">
+        
+       
+        <img src="imagenes/php.png"
+        style="width: 50px; height: 50px;  object-fit: cover;">
+       
+       
+        <img src="imagenes/github.png"
+        style="width: 50px; height: 50px;  object-fit: cover;">
+        
+
+        <img src="imagenes/mysql.png"
+        style="width: 50px; height: 50px; object-fit: cover;">
+        
+        <img src="imagenes/visual-basico.png"
+        style="width: 50px; height: 50px; object-fit: cover;">
+       
+
+        <img src="imagenes/logo_powerbi.webp"
+        style="width: 90px; height: 50px; ">
+       
+
+    </div>
+  </section>
+
+
+
+  <section id="contacto">
+    <div class="tarjeta">
+      <h2>Contacto</h2>
+      <p>Telefono: 3222652173.</p>
+      <p>whatsapp: <a href="https://web.whatsapp.com/" target="_blank"> 3222652173</a></p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Jerson Cruz | Portafolio Web</p>
+  </footer>
+<Script>
+const btnVerMas = document.getElementById("btnVerMas");
+const modal = document.getElementById("miVentana");
+const cerrar = document.querySelector(".cerrar");
+
+// Mostrar modal
+btnVerMas.addEventListener("click", () => {
+  modal.style.display = "flex";
+  document.body.classList.add("modal-abierto"); // ✅ evita parpadeo
+});
+
+// Cerrar modal con la X
+cerrar.addEventListener("click", cerrarModal);
+
+// Cerrar al hacer clic fuera del contenido
+window.addEventListener("click", (e) => {
+  if (e.target === modal) cerrarModal();
+});
+
+// Función para cerrar el modal
+function cerrarModal() {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-abierto");
+}
+</Script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body> 
+</html>
