@@ -12,17 +12,6 @@
 
   <!-- Encabezado -->
   <header>
-    <h1>Jerson Hernan Cruz Garcia</h1>
-    <p>Tecnólogo en Análisis y Desarrollo de Software</p>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#biografia">Biografía</a></li>
-        <li><a href="#curriculum">Currículum</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
 
       <div class="selector-tema">
         <button class="btn-tema" data-tema="azul"> <img src="imagenes/azul.PNG" alt="azul" style="width: 50px; height: 50px;  object-fit: cover;"></button>
@@ -34,14 +23,12 @@
     </nav>
   </header>
  
-
-  <!-- Secciones -->
+ <div class="contenido">
   <section id="inicio">
     <div class="tarjeta">
       <h2>Jerson Hernan Cruz García </h2>
        <img src="imagenes/jerson.png" alt="Jerson Hernan Cruz Garcia"
-       style="width: 350px; height: 350px; border-radius: 50%; object-fit: cover;"> 
-    
+       style="width: 100%; border-radius: 15%; align-content: center;"> 
              
     </div>
   </section>
@@ -75,6 +62,45 @@
         </p>
       </div>
     </div>
+
+
+     <section id="habilidades">
+    <div class="tarjeta">
+      <h2>Habilidades</h2>
+        <img src="imagenes/html-5.png" title="HTML"
+        style="width: 40px; height: 40px;  margin: 15px;">
+       
+        <img src="imagenes/cssNegro-3.png" title="CSS"
+        style="width: 40px; height: 40px;  margin: 15px;">
+        
+        <img src="imagenes/secuencia-de-comandos-de-java.png" title="JS"
+       style="width: 40px; height: 40px;  margin: 15px;">
+        
+       
+        <img src="imagenes/phpN.png" title="php"
+        style="width: 40px; height: 40px;  margin: 15px;">
+       
+       
+        <img src="imagenes/githubN.png" title="github"
+        style="width: 40px; height: 40px;  margin: 15px;">
+        
+
+        <img src="imagenes/mysqlN.png" title="mysql"
+        style="width: 40px; height: 40px;  margin: 15px;">
+        
+        <img src="imagenes/visual-basicoN.png" title="VS"
+        style="width: 40px; height: 40px;  margin: 15px;">
+       
+
+        <img src="imagenes/tendencia.png" title="Power BI"
+        style="width: 40px; height: 40px;  margin: 15px;">
+       
+
+    </div>
+  </section>
+
+
+</div>
 
     <section id="proyectos">
       <div class="tarjeta">
@@ -134,20 +160,20 @@
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
-          <a href="documentos/diploma.pdf" title="Bachiller" target="_blank">
-          <img src="imagenes/diploma-bachiller.PNG" alt="Bachiller">
+          <a href="documentos/diploma.pdf" download="Bachiller Jerson Cruz" title="Bachiller" target="_blank">
+          <img src="imagenes/diploma-bachiller.PNG" alt="Bachiller"> 
           </a>
         </div>
           
         
         <div class="swiper-slide">
-          <a href="documentos/programacion web basica HTML CSS JS.pdf" title=" html-css-js" target="_blank">
+          <a href="documentos/programacion web basica HTML CSS JS.pdf" download="Programacion Web CVA Jersson Cruz" title=" html-css-js" target="_blank">
           <img src="imagenes/certificado-html-css-js.PNG" alt="cert1">
           </a>
         </div>
 
         <div class="swiper-slide">
-          <a href="documentos/Curso en Creación y Diseño de Páginas Web.pdf" title="Diseño web" target="_blank">
+          <a href="documentos/Curso en Creación y Diseño de Páginas Web.pdf" download="HTML-CSS-JS CVA Jersson Cruz" title="Diseño web" target="_blank">
           <img src="imagenes/certificado-paginas-web.PNG" alt="cert2">
           </a>
         </div>
@@ -161,54 +187,36 @@
   </div>
   </section>
 
-  <section id="habilidades">
-    <div class="tarjeta">
-      <h2>Habilidades</h2>
-        <img src="imagenes/html-5.png" title="HTML"
-        style="width: 50px; height: 50px;  object-fit: cover;">
-       
-        <img src="imagenes/css.png"
-        style="width: 50px; height: 50px;  object-fit: cover;">
-        
-        <img src="imagenes/secuencia-de-comandos-de-java.png"
-        style="width: 50px; height: 50px;  object-fit: cover;">
-        
-       
-        <img src="imagenes/php.png"
-        style="width: 50px; height: 50px;  object-fit: cover;">
-       
-       
-        <img src="imagenes/github.png"
-        style="width: 50px; height: 50px;  object-fit: cover;">
-        
-
-        <img src="imagenes/mysql.png"
-        style="width: 50px; height: 50px; object-fit: cover;">
-        
-        <img src="imagenes/visual-basico.png"
-        style="width: 50px; height: 50px; object-fit: cover;">
-       
-
-        <img src="imagenes/logo_powerbi.webp"
-        style="width: 90px; height: 50px; ">
-       
-
-    </div>
-  </section>
+ 
 
 
-
-  <section id="contacto">
-    <div class="tarjeta">
-      <h2>Contacto</h2>
-      <p>Telefono: 3222652173.</p>
-      <p>whatsapp: <a href="https://web.whatsapp.com/" target="_blank"> 3222652173</a></p>
-    </div>
-  </section>
 
   <!-- Pie de página -->
   <footer>
+
+      <section id="contacto">
+    <div class="tarjeta">
+      <h2>Contacto</h2>
+        <a href="tel:+573222652173" target="_blank">
+       <img src="imagenes/llamada-telefonica.png" title="322-265-2173" 
+        style="width: 40px; height: 40px;  margin: 15px;">
+        </a>
+
+        <a href="https://wa.me/573222652173" target="_blank">
+       <img src="imagenes/whatsapp.png" title="322-265-2173" 
+        style="width: 40px; height: 40px;  margin: 15px;">
+        </a>
+
+                <a href="https://www.linkedin.com/public-profile/settings/" target="_blank">
+       <img src="imagenes/linkedin.png" title="Jerson Cruz" 
+        style="width: 40px; height: 40px;  margin: 15px;">
+        </a>
+
+
+    </div>
     <p>© 2025 Jerson Cruz | Portafolio Web</p>
+  </section>
+    
   </footer>
 <Script>
 const btnVerMas = document.getElementById("btnVerMas");

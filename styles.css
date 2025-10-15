@@ -46,15 +46,6 @@
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
 }
-
-body {
-  background: var(--color-fondo);
-  color: var(--color-texto);
-  line-height: 1.6;
-  text-align: center;
-  
-}
-
 header {
   background:var(--color-tarjeta-hover);
   padding: 20px;
@@ -65,64 +56,61 @@ header {
   text-align: center;
 }
 
-header h1 {
-  font-size: 1.8rem;
-  color: var(--color-acento);
-  text-shadow: 0 0 10px var(--color-acento);
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
   text-align: center;
-
-}
-
-nav ul {
-  list-style: none;
-  margin: 10px;
-  padding: 10px;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
   
 }
-nav ul li{
-  display:inline-block;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: var(--color-texto);
-  font-weight: 500;
-  position: relative;
+
+.contenido{
+display: grid;
+grid-template-columns: 200px auto auto;
+margin: 20px 80px  20px 80px;
+} 
+
+#habilidades {
   text-align: center;
+  align-content: center;
 }
 
-nav ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--color-acento);
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
+#habilidades .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav ul li a:hover::after {
-  width: 100%;
+
+#inicio{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 0%;
+  align-items: center;
+  border-radius: 30px 0 0 30px;
+
 }
 
+#biografia{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  border-radius: 0 30px 30px 0;
+  
+
+}
 section {
   padding: 60px 20px;
   max-width: 1100px;
   margin: 0 auto;
-  background: rgba(219, 18, 18, 0.02);
+  background: var(--color-tarjeta);
   border-radius: 40px;
   margin-bottom: 30px;
 }
 
 section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
+  font-size: 100%;
+  
   color: var(--color-acento);
   text-shadow: 0 0 6px var(--color-acento);
 }
@@ -130,6 +118,7 @@ section h2 {
 
 
 
+/*-targeta*/
 
 .tarjeta {
   background: var(--color-tarjeta);
@@ -137,21 +126,13 @@ section h2 {
   border-radius: 12px;
   color: var(--color-texto);
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0%;
   text-align: left;
 }
-
 
 .tarjeta:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 0 20px var(--color-tarjeta-hover);
-}
-.tarjeta img {
-  width: 280px;  /* Puedes ajustar el tamaño aquí */
-  height: 280px; /* Mismo valor que el ancho */
-  margin-bottom: 50px;
-  margin-left: 30px;
-
 }
 
 .tarjeta a img {
@@ -160,7 +141,7 @@ section h2 {
 
 /* Efecto al pasar el cursor */
 .tarjeta a img:hover {
-  transform: scale(1.8);
+  transform: scale(1.2);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -172,20 +153,8 @@ section h2 {
 
 
 
-#habilidades {
-  position: absolute;
-  top: 275px;          /* Ajusta este valor según dónde la quieres */
-  left: 30px;          /* Pegada a la izquierda */
-  text-align: center;
-}
 
-#habilidades .tarjeta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  
-}
+
 
 button, .btn {
   background: var(--color-tarjeta-hover);
@@ -202,16 +171,18 @@ button, .btn {
   display: flex;
   gap: 8px;
   margin: 20px;
-  border-radius: 50%;
-  justify-content: center;
+  
+  justify-content: left ;
 }
 
 .btn-tema {
-  padding: 8px 15px;
-  border: none;
+  padding: 8px;
   cursor: pointer;
   font-weight: bold;
   transition: transform 0.5s background 0.3s;
+}
+.btn-tema img {
+  border-radius: 15px;
 }
 
 .btn-tema:hover {
@@ -220,32 +191,12 @@ button, .btn {
   color: #fff;
 }
 
-
-#proyectos{
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-  background: rgba(219, 18, 18, 0.02);
-  border-radius: 40px;
-  margin-bottom: 30px;
-}
-
-
-/* Títulos principales */
-#proyectos h2{
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: var(--color-acento);
-  padding-left: 10px;
-
-}
-
-/* ----- Proyectos ----- */
 .proyecto {
   background: var(--color-secundario);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
+  border-color: 10px#df0e0e;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -257,7 +208,7 @@ button, .btn {
 .proyecto h3 {
   margin-bottom: 10px;
   color: var(--color-acento);
-  font-size: 1.4rem;
+  font-size: 100%;
 }
 
 .proyecto a {
@@ -373,9 +324,8 @@ body.modal-abierto {
 
 /* Cada slide centrado */
 .swiper-slide {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  top:-25px;
   background: transparent;
 }
 
@@ -384,7 +334,6 @@ body.modal-abierto {
   width: auto;
   max-width: 70%;
   max-height: 360px;
-  object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 0 15px var(--color-fondo);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -397,79 +346,132 @@ body.modal-abierto {
 }
 
 /* Flechas de navegación */
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--color-tarjeta);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: var(--color-secundario);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s, transform 0.3s;
+.swiper-button-prev {
+  left: 10px;
 }
 
-/* Hover en las flechas */
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: var(--color-acento);
-  color: var(--color-fondo);
-  transform: translateY(-50%) scale(1.1);
-}
+.swiper-button-next {
+  right: 10px;
+} 
+
+
 
 /* Posicionamiento */
 .swiper-button-prev { left: -25px; }
 .swiper-button-next { right: -25px; }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .swiper.myswiper {
-    width: 95%;
-    height: 320px;
+
+
+
+/* 🌐 RESPONSIVE: Móviles y tablets */
+@media screen and (max-width: 768px) {
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+    border-radius: 15px;
+  }
+
+  #inicio{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 0%;
+  align-items: center;
+  border-radius: 30px;
+
+}
+
+#biografia{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  border-radius:  30px;
+  
+
+}
+
+  section {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+  }
+
+  /* Centrar contenido de las tarjetas */
+  .tarjeta {
+    text-align: left;
+  }
+
+#habilidades .tarjeta {
+  display: flex;
+  flex-wrap: wrap;       /* Para que bajen en otra línea si no caben */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;               /* Espacio entre imágenes */
+  text-align: center;
+}
+
+  #habilidades .tarjeta img {
+  width: 50px !important;
+  height: 50px !important;
+  margin: 8px !important;
+}
+
+
+
+  .tarjeta img {
+    margin: 5px;
+    width: 80% !important; /* Ajusta según tu preferencia */
+  }
+
+
+  /*contacto*/
+#contacto .tarjeta{
+  display: flex;
+  flex-wrap: wrap;       /* Para que bajen en otra línea si no caben */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;               /* Espacio entre imágenes */
+  text-align: center;
+
+}
+
+#contacto .tarjeta img {
+  width: 50px !important;
+  height: 50px !important;
+  margin: 8px !important;
+
+}
+  @media screen and (max-width: 768px) {
+  .swiper {
+    width: 100%;
+    overflow: visible; /* Evita que las imágenes se oculten */
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    display: flex !important;
+    top:5px;
+    right: 80px;
+    align-items: start;
   }
 
   .swiper-slide img {
-    max-width: 85%;
-    max-height: 250px;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
   }
 
-  .swiper-button-prev { left: 10px; }
-  .swiper-button-next { right: 10px; }
-}
-
-
-/* 🔸 Ajuste para pantallas pequeñas (celulares/tablets) */
-@media (max-width: 768px) {
-  #habilidades {
-    position: static;          /* vuelve a su flujo normal */
-    width: 100%;               /* ocupa todo el ancho */
-    margin: 5px auto;         /* centrado */
-    display: flex;
-    justify-content: left;
-  }
-
-  #habilidades .tarjeta {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;       /* centra el contenido */
-    text-align: center;
-    background-color: var(--color-tarjeta);
-    width: 90%;
-  }
-
-  #habilidades img {
-    width: 40px;               /* ajusta tamaño de iconos */
-    height: 40px;
-    margin: 10px;
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
   }
 }
-#habilidades h2{
-  width: 100%;
-  text-align: left;
 }
