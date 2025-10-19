@@ -5,6 +5,7 @@
   --color-secundario: #112240;
   --color-tarjeta: #112240;
   --color-tarjeta-hover: #0e506455;
+  --color-img: invert(79%) sepia(41%) saturate(3858%) hue-rotate(140deg) brightness(102%) contrast(104%);
 }
 
 .cafe {
@@ -14,6 +15,7 @@
 --color-secundario: #c9b29c; 
 --color-tarjeta: #c7b79b; 
 --color-tarjeta-hover:rgba(214, 193, 165, 0.9);
+--color-img: invert(16%) sepia(41%) saturate(2387%) hue-rotate(16deg) brightness(100%) contrast(96%);;
 
 }
 
@@ -25,6 +27,7 @@
 --color-secundario: #555454; 
 --color-tarjeta: #c3c8c9; 
 --color-tarjeta-hover: rgba(41, 44, 56, 0.5);
+--color-img: invert(3%) sepia(7%) saturate(6261%) hue-rotate(154deg) brightness(99%) contrast(105%);
 }
 
 
@@ -35,6 +38,7 @@
 --color-secundario: #7092b4; 
 --color-tarjeta: #acd1f5; 
 --color-tarjeta-hover:rgba(179, 219, 240, 0.5);
+--color-img:invert(24%) sepia(99%) saturate(469%) hue-rotate(156deg) brightness(94%) contrast(92%);
 }
 /* --------------------
    Estilos generales
@@ -65,11 +69,6 @@ body {
 }
 
 
-.contenido{
-display: grid;
-grid-template-columns: 200px auto auto;
-margin: 20px 80px  20px 80px;
-} 
 
 #habilidades {
   text-align: center;
@@ -81,6 +80,13 @@ margin: 20px 80px  20px 80px;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+#habilidades .img {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  filter: var(--color-img);
+   transition: transform 0.3s ease;
 }
 
 
@@ -222,6 +228,11 @@ button, .btn {
 }
 
 
+.contenido{
+display: grid;
+grid-template-columns: 200px auto auto;
+margin: 20px 10px  10px 10px;
+} 
 
 
 
@@ -374,6 +385,12 @@ body.modal-abierto {
 #contacto .tarjeta img {
   display: flex;
   margin: 20px;
+}
+#contacto .img {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  filter: var(--color-img);
 }
 
 
